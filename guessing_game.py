@@ -14,17 +14,8 @@ def create_random_list(start, end, count):
 
     return result
 
-first_list_of_int_to_guess = [] 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
-first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess = create_random_list(1, 99, 10)
+
 
 for i in range(GOD_MODE_LIMIT_OF_NUMBERS): 
     if GOD_MODE:
