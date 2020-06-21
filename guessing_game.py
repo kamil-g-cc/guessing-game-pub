@@ -54,7 +54,9 @@ for i in range(GOD_MODE_LIMIT_OF_NUMBERS):
 '''
 second_list_of_int_to_guess = create_random_list(1, 49, 10)
 
+play_game(second_list_of_int_to_guess)
 
+'''
 
 for i in range(GOD_MODE_LIMIT_OF_NUMBERS):
     if GOD_MODE:
@@ -71,3 +73,4 @@ for i in range(GOD_MODE_LIMIT_OF_NUMBERS):
         else:
             break
     print("you guessed it!")
+'''
