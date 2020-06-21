@@ -7,6 +7,13 @@ GOD_MODE_LIMIT_OF_NUMBERS = 3
 #2 second function: function to guess a number
 #3 
 
+def create_random_list(start, end, count):
+    result = []
+    for i in range(count):
+        result.append(random.randint(start,end))
+
+    return result
+
 first_list_of_int_to_guess = [] 
 first_list_of_int_to_guess.append(random.randint(1, 99)) 
 first_list_of_int_to_guess.append(random.randint(1, 99)) 
