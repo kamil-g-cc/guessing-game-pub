@@ -7,29 +7,29 @@ GOD_MODE_LIMIT_OF_NUMBERS = 3
 #2 second function: function to guess a number
 #3 
 
-a = [] 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
-a.append(random.randint(1, 99)) 
+first_list_of_int_to_guess = [] 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
+first_list_of_int_to_guess.append(random.randint(1, 99)) 
 
 for i in range(GOD_MODE_LIMIT_OF_NUMBERS): 
     if GOD_MODE:
-        print("god mode", a[i])
+        print("god mode", first_list_of_int_to_guess[i])
 
 
     g = int(input("Enter an integer from 1 to 99: "))
-    while a[i] != g:
-        if g < a[i]:
+    while first_list_of_int_to_guess[i] != g:
+        if g < first_list_of_int_to_guess[i]:
             print("guess is low")
             g = int(input("Enter an integer from 1 to 99: "))
-        elif g > a[i]:
+        elif g > first_list_of_int_to_guess[i]:
             print("guess is high")
             g = int(input("Enter an integer from 1 to 99: "))
         else:
