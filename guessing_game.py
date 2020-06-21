@@ -24,14 +24,14 @@ for i in range(GOD_MODE_LIMIT_OF_NUMBERS):
         print("god mode", first_list_of_int_to_guess[i])
 
 
-    g = int(input("Enter an integer from 1 to 99: "))
-    while first_list_of_int_to_guess[i] != g:
-        if g < first_list_of_int_to_guess[i]:
+    user_guess = int(input("Enter an integer from 1 to 99: "))
+    while first_list_of_int_to_guess[i] != user_guess:
+        if user_guess < first_list_of_int_to_guess[i]:
             print("guess is low")
-            g = int(input("Enter an integer from 1 to 99: "))
-        elif g > first_list_of_int_to_guess[i]:
+            user_guess = int(input("Enter an integer from 1 to 99: "))
+        elif user_guess > first_list_of_int_to_guess[i]:
             print("guess is high")
-            g = int(input("Enter an integer from 1 to 99: "))
+            user_guess = int(input("Enter an integer from 1 to 99: "))
         else:
             break
     print("you guessed it!")
@@ -51,14 +51,14 @@ for i in range(GOD_MODE_LIMIT_OF_NUMBERS):
     if GOD_MODE:
         print("god mode", b[i])
 
-    g = int(input("Enter an integer from 1 to 49: "))
-    while b[i] != g:
-        if g < b[i]:
+    user_guess = int(input("Enter an integer from 1 to 49: "))
+    while b[i] != user_guess:
+        if user_guess < b[i]:
             print("guess is low")
-            g = int(input("Enter an integer from 1 to 49: "))
-        elif g > b[i]:
+            user_guess = int(input("Enter an integer from 1 to 49: "))
+        elif user_guess > b[i]:
             print("guess is high")
-            g = int(input("Enter an integer from 1 to 49: "))
+            user_guess = int(input("Enter an integer from 1 to 49: "))
         else:
             break
     print("you guessed it!")
